@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversions</title>
+</head>
+
+<body>
+    <div>
+        <fieldset>
+            <legend>String Conversion</legend>
+            <p>String conversion happens when we need the string form of a value.</p>
+            <p>For example, alert(value) does it to show the value.</p>
+            <p>We can also call the String(value) function to convert a value to a string:</p>
+            <pre>
+let value = true;
+alert(typeof value); // boolean
+
+value = String(value); // now value is a string "true"
+alert(typeof value); // string
+            </pre>
+            <button id="stringConversion">Result</button>
+        </fieldset>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>Numeric Conversion</legend>
+            <p>alert( "6" / "2" ); // 3, strings are converted to numbers.</p>
+            <pre>
+let str = "123";
+alert(typeof str); // string
+
+let num = Number(str); // becomes a number 123
+alert(typeof num); // number
+            </pre>
+            <button id="numberConversion">Result</button>
+            <p>========================</p>
+            <pre>
+If the string is not a valid number, the result of such a conversion is NaN. For instance:
+let age = Number("an arbitrary string instead of a number");
+alert(age); // NaN, conversion failed
+            </pre>
+        </fieldset>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>Boolean Conversion</legend>
+            <ul>
+                <li>Values that are intuitively “empty”, like 0, an empty string, null, undefined, and NaN, become false.</li>
+                <li>Other values become true.</li>
+            </ul>
+            <pre>
+alert( Boolean(1) ); // true
+alert( Boolean(0) ); // false
+
+alert( Boolean("hello") ); // true
+alert( Boolean("") ); // false
+            </pre>
+        </fieldset>
+    </div>
+
+    <script>
+        function stringConversion() {
+            let value = true;
+            alert(typeof value); // boolean
+            value = String(value); // now value is a string "true"
+            alert(typeof value); // string
+        }
+
+        function numberConversion() {
+            let str = "123";
+            alert(typeof str); // string
+            let num = Number(str); // becomes a number 123
+            alert(typeof num); // number
+        }
+
+        document.getElementById("stringConversion").addEventListener('click', stringConversion)
+        document.getElementById("numberConversion").addEventListener('click', numberConversion)
+    </script>
+</body>
+
+</html>
