@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction Alert, Prompt, Confirm</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Alert</legend>
+        <pre>alert("hello")</pre>
+    </fieldset>
+    <fieldset>
+        <legend>prompt</legend>
+        <pre>result = prompt(title, [default])</pre>
+        <pre>let age = prompt('How old are you?', 100); <br>alert(`You are ${age} years old!`); // You are 100 years old! </pre>
+        <button id="btnPrompt">Result</button>
+    </fieldset>
+    <fieldset>
+        <legend>Confirm</legend>
+        <pre>let isBoss = confirm("Are you the boss?"); <br>alert( isBoss );  </pre>
+        <button id="btnConfirm">Result</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>Task</legend>
+        <p>Create a web-page that asks for a name and outputs it.</p>
+        <pre>let name = prompt("what u name", "") <br>alert(name)</pre>
+        <button id="btnTask">Result</button>
+    </fieldset>
+
+    <script>
+        function testPrompt() {
+            let age = prompt('How old are you?', 100);
+            alert(`You are ${age} years old!`); 
+        }
+
+        function testConfirm() {
+            let isBoss = confirm("Are you the boss?");
+            alert( isBoss ); 
+        }
+
+        function testTask() {
+            let name = prompt("what u name", "");
+            alert(name);
+        }
+
+        document.getElementById("btnPrompt").addEventListener('click', testPrompt)
+        document.getElementById("btnConfirm").addEventListener('click', testConfirm)
+        document.getElementById("btnTask").addEventListener('click', testTask)
+    </script>
+</body>
+</html>
