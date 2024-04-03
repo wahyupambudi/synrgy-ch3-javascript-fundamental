@@ -1,0 +1,12 @@
+{
+  "name": "synrgy-ch3-javascript-fundamental",
+  "version": "1.0.0",
+  "description": "Repository Javascript Fundamental from javascript.info",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
