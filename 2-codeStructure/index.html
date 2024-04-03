@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Structure</title>
+</head>
+<body>
+    <h2>Impmentation semicolon</h2>
+    <fieldset>
+        <legend>example semicolon</legend>
+        <pre>alert('Hello');</pre>
+        <pre>alert('World');</pre>
+        <pre>
+alert(3 +
+1
++ 2);
+        </pre>
+    </fieldset>
+
+    <fieldset>
+        <legend>Example Error</legend>
+        <pre>
+implementation semicolon case
+alert("Hello");
+[1, 2].forEach(alert)
+        </pre>
+
+        <pre>
+implementation semicolon fails
+alert("Hello")
+[1, 2].forEach(alert)
+        </pre>
+    </fieldset>
+
+    <fieldset>
+        <legend>Comments</legend>
+        <pre>
+// This comment occupies a line of its own
+alert('Hello');
+
+alert('World'); // This comment follows the statement
+        </pre>
+        <pre>
+/*
+  /* nested comment ?!? */
+*/
+alert( 'World' );
+        </pre>
+    </fieldset>
+</body>
+</html>
