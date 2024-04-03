@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Data</title>
+</head>
+
+<body>
+
+    <div>
+        <h2>Number</h2>
+        <fieldset>
+            <legend>Number</legend>
+<pre>
+let n = 123;
+n = 12.345;
+</pre>
+            <p>==================</p>
+<pre>
+alert( 1 / 0 ); // Infinity
+alert( "not a number" / 2 ); // NaN, such division is erroneous
+
+alert( NaN + 1 ); // NaN
+alert( 3 * NaN ); // NaN
+alert( "not a number" / 2 - 1 ); // NaN
+</pre>
+            <p>==================</p>
+<pre>
+// BIG INT
+// the "n" at the end means it's a BigInt
+const bigInt = 1234567890123456789012345678901234567890n;
+</pre>
+        </fieldset>
+    </div>
+
+
+    <div>
+        <h2>String</h2>
+        <p>In JavaScript, there are 3 types of quotes</p>
+        <ul>
+            <li>Double quotes: "Hello".</li>
+            <li>Single quotes: 'Hello'.</li>
+            <li>Backticks: `Hello`.</li>
+        </ul>
+        <fieldset>
+            <legend>String</legend>
+<pre>
+let str = "Hello";
+let str2 = 'Single quotes are ok too';
+let phrase = `can embed another ${str}`;
+</pre>
+            <p>==================</p>
+<pre>
+let name = "John";
+
+// embed a variable
+alert( `Hello, ${name}!` ); // Hello, John!
+
+// embed an expression
+alert( `the result is ${1 + 2}` ); // the result is 3
+</pre>
+        </fieldset>
+    </div>
+
+    <div>
+        <h2>Boolean</h2>
+        <p>The boolean type has only two values: true and false.</p>
+
+        <fieldset>
+            <legend>Boolean</legend>
+<pre>
+let nameFieldChecked = true; // yes, name field is checked
+let ageFieldChecked = false; // no, age field is not checked
+</pre>
+            <p>==================</p>
+<pre>
+let isGreater = 4 > 1;
+alert( isGreater ); // true (the comparison result is "yes")
+</pre>
+        </fieldset>
+    </div>
+
+    <div>
+        <h2>Null</h2>
+        <fieldset>
+            <legend>Null</legend>
+            <pre>let age = null;</pre>
+            <ul>
+                <li>In JavaScript, null is not a “reference to a non-existing object” or a “null pointer” like in some
+                    other languages.</li>
+                <li>It's just a special value which represents “nothing”, “empty” or “value unknown”.</li>
+                <li>The code above states that age is unknown.</li>
+            </ul>
+        </fieldset>
+    </div>
+
+    <div>
+        <h2>Undefined</h2>
+        <fieldset>
+            <legend>Undefined</legend>
+            <pre>let age;<br>alert(age); // show "Undefined"</pre>
+            <pre>let age = 100;<br>age = undefined <br>alert(age) // "undefined"</pre>
+        </fieldset>
+    </div>
+</body>
+
+</html>
