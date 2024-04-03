@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Strict</title>
+</head>
+<body>
+    <h2>Impmentation use strict</h2>
+
+    <fieldset>
+        <legend>use strict</legend>
+    <p>'use strict' adalah fitur di ES5 yang mengaharuskan penulisan program menggunakan strict mode, maksudnya jika kita ingin menulis variabel ataupun fungsi harus di definisikan terlebih dahulu menggunakan kata var atau function.</p>
+    <p>Kode: </p>
+    <pre>"use strict";</pre>
+    <pre>
+'use strict'
+
+let name = 'wahyupambudi'
+alert(`Halo ${name} dengan tipe data ` + typeof name);
+console.log(name)
+
+show err : Uncaught ReferenceError: assignment to undeclared variable nama
+nama = 'wahyupambudi'
+alert(`Halo ${nama} dengan tipe data ` + typeof nama);
+console.log(nama)
+    </pre>
+    </fieldset>
+
+    <script>
+        'use strict'
+
+        let name = 'wahyupambudi'
+        alert(`Halo ${name} dengan tipe data ` + typeof name);
+        console.log(name)
+
+        nama = 'wahyupambudi'
+        alert(`Halo ${nama} dengan tipe data ` + typeof nama);
+        console.log(nama)
+    </script>
+</body>
+</html>
