@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conditional</title>
+</head>
+<body>
+	<div>
+		<h2>If Else If Condition</h2>
+		<fieldset>
+			<legend>Condition if</legend>
+			<pre>
+				const a = 10;
+				if (a === 10) {
+					alert(true);
+				}
+			</pre>
+		</fieldset>
+
+		<fieldset>
+			<legend>Boolean Conversion</legend>
+			<pre>
+				if (0) { // 0 is false
+				....
+				}
+			</pre>
+			<pre>
+				if (1) { // 1 is true
+				....
+				}
+			</pre>
+		</fieldset>
+
+		<fieldset>
+			<legend>Else</legend>
+			<pre>
+				const a = 10;
+				if (a === 10) {
+					alert(true);
+				} else {
+					alert(false)
+				}
+			</pre>
+		</fieldset>
+
+		<fieldset>
+			<legend>else if</legend>
+			<pre>
+				const a = 10;
+				if (a === 10) {
+					alert("a = 10");
+				} else if (a === 20) {
+					alert("a = 20")
+				} else {
+					alert(false)
+				}
+			</pre>
+		</fieldset>
+
+		<fieldset>
+			<legend>Condition operator ?</legend>
+			<pre>
+				let result = condition ? value1 : value2;
+				example
+				let accessAllowed = (age > 18) ? true : false;
+			</pre>
+			<pre>
+				multiple
+				let age = prompt('age?', 18);
+
+				let message = (age < 3) ? 'Hi, baby!' :
+				(age < 18) ? 'Hello!' :
+				(age < 100) ? 'Greetings!' :
+				'What an unusual age!';
+
+				alert( message );
+			</pre>
+		</fieldset>
+
+	</div>
+</body>
+</html>
